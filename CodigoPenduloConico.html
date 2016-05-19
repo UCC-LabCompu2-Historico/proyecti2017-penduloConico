@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Pendulo Conico Fisica</title>
-    <link rel="stylesheet" type="text/css" href=CSSPENDULO.css title="miEjemplo" media="all" />
+    <link rel="stylesheet" type="text/css" href=CSSPENDULO.css title="miEjemplo" media="all"/>
+    <script type="text/javascript" src="jsPenduloCónico.js"></script>
 </head>
 <body>
 <header>
@@ -13,62 +14,123 @@
 </header>
 <nav>
     <p><a href="#">Inicio</a></p>
-    <p><a href="#">¿Qué es?</a></p>
-    <p><a href="#">Análisis del Movimiento</a></p>
-    <p><a href="#">Ejercicio Explicativo</a></p>
+    <p><a href="#queEs">¿Qué es?</a></p>
+    <p><a href="#analisisMov">Análisis del Movimiento</a></p>
+    <p><a href="#ejercicioExp">Ejercicio Explicativo</a></p>
 </nav>
 <section>
     <h1>Representación Gráfica: Péndulo Cónico</h1>
 
-    <center><img src="graaplicacion2.png"> </center>
+    <div align="center"><img src="image/graaplicacion2.png"></div>
 
-    <h2>¿Qué es?</h2>
+    <h2 id="queEs">¿Qué es?</h2>
     <article>
-        <p>El péndulo cónico está constituido por un cuerpo pesado de pequeñas dimensiones (puntual, idealmente) suspendido de un punto fijo mediante un hilo inextensible y de masa despreciable. Su construcción es la misma que la de un péndulo simple, pero, a diferencia de éste, el péndulo cónico no oscila, sino que la masa pendular describe una trayectoria circular en un plano horizontal con aceleración constante. Su nombre proviene del hecho de que el hilo traza una superficie cónica.
-            El péndulo cónico es un caso particular del péndulo esférico. En concreto es un péndulo esférico en el que el vector velocidad (inicial) es perpendicular al plano determinado por la vertical y el hilo.
+        <p>El péndulo cónico está constituido por un cuerpo pesado de pequeñas dimensiones (puntual, idealmente)
+            suspendido de un punto fijo mediante un hilo inextensible y de masa despreciable. Su construcción es la
+            misma que la de un péndulo simple, pero, a diferencia de éste, el péndulo cónico no oscila, sino que la masa
+            pendular describe una trayectoria circular en un plano horizontal con aceleración constante. Su nombre
+            proviene del hecho de que el hilo traza una superficie cónica.
+            El péndulo cónico es un caso particular del péndulo esférico. En concreto es un péndulo esférico en el que
+            el vector velocidad (inicial) es perpendicular al plano determinado por la vertical y el hilo.
             El científico inglés Robert Hooke fue el primero en estudiar las características de este péndulo, en 1660.
         </p>
     </article>
-    <h2>Análisis del Movimiento</h2>
+    <h2 id="analisisMov">Análisis del Movimiento</h2>
     <article>
         <p>
-            Consideremos un péndulo cónico consistente en una pequeña esfera de masa m que se mueve sin fricción en una circunferencia horizontal con una celeridad constante v, suspendida de un hilo de longitud L que forma un ángulo constante θ con la vertical.
+            Consideremos un péndulo cónico consistente en una pequeña esfera de masa m que se mueve sin fricción en una
+            circunferencia horizontal con una celeridad constante v, suspendida de un hilo de longitud L que forma un
+            ángulo constante θ con la vertical.
             Sobre la masa m actúan dos fuerzas: su propio peso, mg, y la tensión del hilo, T.
-            La componente horizontal de la tensión del hilo proporciona la aceleración centrípeta,<img src="acp.png"> , asociada con el movimiento circular. La componente vertical de la tensión se compensa exactamente con el peso de la masa m. La aplicación de la segunda ley de Newton en las direcciones horizontal y vertical nos permite escribir (1) y (2):
+            <br>
+            La componente horizontal de la tensión del hilo proporciona la aceleración centrípeta,
+            <img src="image/acp.png"> ,
+            asociada con el movimiento circular. La componente vertical de la tensión se compensa exactamente con el
+            peso de la masa m.
+            <br>
+            La aplicación de la segunda ley de Newton en las direcciones horizontal y vertical nos
+            permite escribir (1) y (2):
 
-        <center><img src="1.png"> </center>
-        <center><img src="2.png"> </center>
+        <div class="divForm"><img src="image/1.png"></div>
+        <div class="divForm"><img src="image/2.png"></div>
 
-            Dividiendo miembro a miembros estas dos ecuaciones, eliminamos T y m, resultando (3):
+        Dividiendo miembro a miembros estas dos ecuaciones, eliminamos T y m, resultando (3):
 
-        <center><img src="3.png"> </center>
+        <div class="divForm"><img src="image/3.png"></div>
 
-            Puesto que la celeridad v es constante, puede expresarse en función del tiempo <img src="4-1.png"> requerido para realizar una revolución completa o periodo de revolución (4),
-        <center><img src="4.png"> </center>
+        Puesto que la celeridad v es constante, puede expresarse en función del tiempo <img src="image/4-1.png">
+        requerido
+        para realizar una revolución completa o periodo de revolución (4),
+        <div class="divForm"><img src="image/4.png"></div>
 
-            y sustituyendo en la ecuación (3), después de fáciles operaciones, obtenemos (5):
+        y sustituyendo en la ecuación (3), después de fáciles operaciones, obtenemos (5):
 
-        <center><img src="5.png"> </center>
+        <div class="divForm"><img src="image/5.png"></div>
 
-            En la ejecución práctica de la experiencia, r varía y no es tan fácil de medir como la longitud constante L del hilo. Recurriendo a la relación trigonométria entre r, h, y L, esto es, <img src="6-1.png"> , la relación (5) se escribe en la forma (6):
+        En la ejecución práctica de la experiencia, r varía y no es tan fácil de medir como la longitud constante L
+        del
+        hilo. Recurriendo a la relación trigonométria entre r, h, y L, esto es,
 
-        <center><img src="6.png"> </center>
+        <div class="divForm"><img src="image/6-1.png"></div>
+        , la relación (5) se escribe en la forma (6):
 
-        Para pequeños ángulos será cos(θ) ≈ 1 y el periodo de revolución del péndulo cónico resulta ser casi igual al periodo de oscilación del péndulo simple de la misma longitud. Además, para pequeños ángulos, el periodo de revolución es aproximadamente independiente del valor del ángulo θ, lo que significa que, a pesar de que el ángulo vaya disminuyendo (por fricción con el aire, por ejemplo), el periodo permanece prácticamente constante. Esta propiedad, llamada isocronismo, la poseen también los péndulos ordinarios.
+        <div class="divForm"><img src="image/6.png"></div>
+
+        Para pequeños ángulos será cos(θ) ≈ 1 y el periodo de revolución del péndulo cónico resulta ser casi igual
+        al periodo de oscilación del péndulo simple de la misma longitud. Además, para pequeños ángulos, el periodo de
+        revolución es aproximadamente independiente del valor del ángulo θ, lo que significa que, a pesar de que el
+        ángulo vaya disminuyendo (por fricción con el aire, por ejemplo), el periodo permanece prácticamente
+        constante. <br>
+        Esta propiedad, llamada <b>isocronismo</b>, la poseen también los péndulos ordinarios.
 
         </p>
 
     </article>
-    <h2>Ejercicio Explicativo</h2>
+    <h2 id="ejercicioExp">Ejercicio Explicativo</h2>
     <article>
-        <p> Desarrollo del Ejercicio:</p>
+        <div>
+            <p> Desarrollo del Ejercicio:
+            <div class="divVarC">
+                Variable que desea Calcular
+                <form name="varC" onclick="shownVariables()">
+                    <input name="varCal" value="tension" type="radio"> Tension <br>
+                    <input name="varCal" value="Longitud" type="radio" checked> Longitud <br>
+                    <input name="varCal" value="gravedad" type="radio"> Gravedad <br>
+                </form>
+            </div>
+            <div class="divVarC" id="valIngresar">
+                Valores a Ingresar
+                <form name="valoresIngr">
+                    Longitud=<input type="text" name="longitud" size="4" onchange="calcPendulo(this.name, this.value)">
+                    <select name="unidL">
+                        <option value="metros">metros</option>
+                        <option value="pulgadas">pulgadas</option>
+                        <option value="pies">pies</option>
+                    </select>
+                    <br>
+                    Gravedad=<input type="text" name="Grav" value="9.8" size="4">
+                    <br>
+                    Angulo=<input type="text" name="angulo" size="4" onchange="calcPendulo(this.name, this.value)">
+                    <select name="unidAng">
+                        <option value="grados">grados</option>
+                        <option value="radianes">radianes</option>
+                    </select>
+                </form>
+            </div>
+            <div class="divVarC" id="resultados">
+                <form name="resul">
+                    T=<input type="text" id="resul_tension">
+                </form>
+            </div>
+            </p>
+        </div>
     </article>
     <br/><br/>
 </section>
 <aside>
     <div id="anuncio1">
         <h2>Movimiento</h2>
-        <center><img src="PenduloImgGif.gif"> </center>
+        <img src="image/PenduloImgGif.gif">
     </div>
 </aside>
 <footer>

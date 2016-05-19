@@ -1,38 +1,155 @@
-* { margin: auto; padding: 0;
-    font-family:Arial;  }
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Arial;
+}
 
+body {
+    background-color: #f4cf80;
+}
 
-body { background-color: #f4cf80; }
+header {
+    background: linear-gradient(to right, #D2691E, #FF8C00, orange);
+}
 
+header h1 {
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
 
-header { background: linear-gradient(to right, #D2691E , #FF8C00, orange); }
-header h1 { text-align: center; color: #000000; padding: 0.5em; font-size: 1.5em; }
-header h2 { text-align: center; color: #000000; padding: 0.5em; font-size: 1.2em; }
+header h2 {
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
 
+nav {
+    background-color: #000000;
+    min-height: 2em;
+}
 
-nav { background-color: #000000; min-height: 2em; }
-nav p { display: inline; }
-nav a:link, nav a:visited { text-decoration: none; color: #F8F8FF; margin:0.3em; }
-nav a:hover, nav a:active { text-decoration: none; color: #fdfdff; background-color: #543683; margin: 0.3em; }
+nav p {
+    display: inline;
+}
 
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color: #F8F8FF;
+    margin: 0.3em;
+}
 
-section { width: 75%; background-color: white; float: left; }
-section h1 { text-align: center; padding: 0.5em; color: black; font-size: 1.4em; }
-section h2 { text-align: center; padding: 0.5em; color: #424242; font-size: 1.2em; }
-section h3 { text-align: left; padding: 0.3em 3em; color: #663366; font-size: 1em;  }
+nav a:hover, nav a:active {
+    text-decoration: none;
+    color: #fdfdff;
+    background-color: #543683;
+    margin: 0.3em;
+}
 
+section {
+    width: 75%;
+    background-color: white;
+    float: left;
+}
 
-article { margin: 0.5em 3em; padding: 0.5em 2em; background-color: white; border: 3px double #808080; }
-article p { text-align: justify; }
+section h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: black;
+    font-size: 1.4em;
+}
 
+section h2 {
+    text-align: center;
+    padding: 0.5em;
+    color: #424242;
+    font-size: 1.2em;
+}
 
-aside { width: 25%; float: left; }
-#anuncio1 { margin: 20px; padding: 10px; border: 2px solid #00008e; background-color: white; }
-#anuncio1 h2 { font-size: 1.5em; text-align: center; padding: 0.5em 0em; }
-#anuncio1 p { font-size: 0.9em; padding: 0.2em 1em; }
+section h3 {
+    text-align: left;
+    padding: 0.3em 3em;
+    color: #663366;
+    font-size: 1em;
+}
 
+article {
+    margin: 0.5em 3em;
+    padding: 0.5em 2em;
+    background-color: white;
+    border: 3px double #808080;
+}
 
-footer { clear: both; background-color: #eaeaea; }
-footer h1 { text-align: center; font-size: 1.4em; color: #80440f; padding: 0.7em; }
-footer h2 { text-align: center; font-size: 1em; padding: 0.4em; }
-footer a { text-decoration: none; color: #4c4780; }
+article p {
+    text-align: justify;
+}
+
+aside {
+    width: 25%;
+    float: left;
+}
+
+#anuncio1 {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #00008e;
+    background-color: white;
+}
+
+#anuncio1 h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+#anuncio1 p {
+    font-size: 0.9em;
+    padding: 0.2em 1em;
+}
+
+footer {
+    clear: both;
+    background-color: #eaeaea;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #80440f;
+    padding: 0.7em;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 1em;
+    padding: 0.4em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4c4780;
+}
+
+.divForm {
+    margin: 1em;
+    text-align: center;
+}
+
+.divVarC {
+    background-color: #f4cf80;
+    width: 220px;
+    float: left;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+#valIngresar{
+    display: none;
+}
+
+#resultados{
+    display: none;
+}
