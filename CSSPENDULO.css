@@ -6,11 +6,16 @@
 }
 
 body {
-    background-color: #f4cf80;
+    background-color: #A7DBD8;
+}
+
+.mati{
+    position: fixed;
 }
 
 header {
     background: linear-gradient(to right, #D2691E, #FF8C00, orange);
+    margin-top: 0px;
 }
 
 header h1 {
@@ -35,7 +40,7 @@ nav {
 
 }
 .enblanco{
-    height: 100px;
+    height: 50px;
     width: 170px;
 }
 
@@ -120,7 +125,6 @@ aside {
 footer {
     clear: both;
     background-color: #eaeaea;
-    clear: both;
 }
 
 footer h1 {
@@ -147,7 +151,7 @@ footer a {
 }
 
 .divVarC {
-    background-color: #f4cf80;
+    background-color: #A7DBD8;
     width: 220px;
     float: left;
     margin: 0.5em;
