@@ -163,6 +163,7 @@ footer a {
     background-color: #EEEEEE;
     width: 220px;
     margin: 0.5em;
+    margin-left: -2px;
     padding: 0.5em;
     border: 2px solid #194D80;
 }
@@ -183,6 +184,7 @@ footer a {
 #canvas
 {
     border: 2px solid #194D80;
+    background-color: #fff;
 }
 
 img{
@@ -191,4 +193,49 @@ img{
 
 #res{
     border: 2px solid #194D80;
+}
+
+.inputs-calculo>input
+ {
+     margin: 7px;
+ }
+
+#calcular
+{
+    background-color: #194D80;
+    padding: 8px;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 10px;
+}
+
+.ejemplo h3
+{
+    margin-left: -50px;
+}
+.ejemplo ul{
+    margin-left: 25px;
+}
+
+#varC
+{
+    background-color: #194D80;
+    padding: 8px;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.span
+{
+    float: left;
+    margin-right: 7px;
+}
+
+#res
+{
+    height: 20px;
+    padding:3px;
+    background-color: #fff;
 }
