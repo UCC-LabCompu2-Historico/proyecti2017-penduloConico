@@ -164,7 +164,7 @@ footer a {
     width: 220px;
     margin: 0.5em;
     padding: 0.5em;
-    border: 1px solid black;
+    border: 2px solid #194D80;
 }
 
 #valIngresar{
@@ -182,9 +182,13 @@ footer a {
 
 #canvas
 {
-    border: 1px solid black
+    border: 2px solid #194D80;
 }
 
 img{
+    border: 2px solid #194D80;
+}
+
+#res{
     border: 2px solid #194D80;
 }
