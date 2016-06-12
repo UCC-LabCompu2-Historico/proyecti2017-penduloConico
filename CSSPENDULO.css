@@ -8,34 +8,41 @@
 p{font-size: 20px;}
 
 body {
-    background-color: #A7DBD8;
+    background-color: #7C858B;
 }
-
+/*392A2D
+linear-gradient(to right, #D2691E, #FF8C00, orange)*/
 .mati{
     position: fixed;
 }
 
 header {
-    background: linear-gradient(to right, #D2691E, #FF8C00, orange);
+    background: #194D80;
     margin-top: 0px;
 }
 
 header h1 {
     text-align: center;
-    color: #000000;
+    color: #EEEEEE;
     padding: 0.5em;
+    padding-top: 1.4em;
     font-size: 1.5em;
 }
 
 header h2 {
     text-align: center;
-    color: #000000;
+    color: #EEEEEE;
     padding: 0.5em;
     font-size: 1.2em;
 }
 
 nav {
-    background-color: #000000;
+    background: rgb(201, 201, 201);
+    background: -moz-linear-gradient(270deg, rgb(201, 201, 201) 28%, rgb(232, 232, 232) 70%);
+    background: -webkit-linear-gradient(270deg, rgb(201, 201, 201) 28%, rgb(232, 232, 232) 70%);
+    background: -o-linear-gradient(270deg, rgb(201, 201, 201) 28%, rgb(232, 232, 232) 70%);
+    background: -ms-linear-gradient(270deg, rgb(201, 201, 201) 28%, rgb(232, 232, 232) 70%);
+    background: linear-gradient(0deg, rgb(201, 201, 201) 28%, rgb(232, 232, 232) 70%);
     min-height: 2em;
     position: fixed;
     top:0;
@@ -52,7 +59,7 @@ nav p {
 
 nav a:link, nav a:visited {
     text-decoration: none;
-    color: #F8F8FF;
+    color: #392A2D;
     margin: 0.3em;
 }
 
@@ -65,7 +72,7 @@ nav a:hover, nav a:active {
 
 section {
     width: 75%;
-    background-color: white;
+    background-color: #EEEEEE;
     float: left;
 }
 
@@ -92,9 +99,9 @@ section h3 {
 
 article {
     margin: 0.5em 3em;
-    padding: 0.5em 2em;
-    background-color: white;
-    border: 3px double #808080;
+    /*padding: 0.5em 2em;*/
+    background-color: #EEEEEE;
+    /*border: 3px double #808080;*/
 }
 
 article p {
@@ -109,8 +116,8 @@ aside {
 #anuncio1 {
     margin: 20px;
     padding: 10px;
-    border: 2px solid #00008e;
-    background-color: white;
+    /*border: 2px solid #00008e;*/
+    background-color: #EEEEEE;
 }
 
 #anuncio1 h2 {
@@ -126,13 +133,13 @@ aside {
 
 footer {
     clear: both;
-    background-color: #eaeaea;
+    background-color: #7C858B;
 }
 
 footer h1 {
     text-align: center;
     font-size: 1.4em;
-    color: #80440f;
+    color: #194D80;
     padding: 0.7em;
 }
 
@@ -153,9 +160,8 @@ footer a {
 }
 
 .divVarC {
-    background-color: #A7DBD8;
+    background-color: #EEEEEE;
     width: 220px;
-    float: left;
     margin: 0.5em;
     padding: 0.5em;
     border: 1px solid black;
@@ -167,4 +173,18 @@ footer a {
 
 #resultados{
     display: none;
+}
+
+.calculos
+{
+    float:left;
+}
+
+#canvas
+{
+    border: 1px solid black
+}
+
+img{
+    border: 2px solid #194D80;
 }

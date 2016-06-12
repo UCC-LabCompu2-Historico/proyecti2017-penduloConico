@@ -6,8 +6,9 @@
     <title>Pendulo Conico Fisica</title>
     <link rel="stylesheet" type="text/css" href=CSSPENDULO.css title="miEjemplo" media="all"/>
     <script type="text/javascript" src="jsPenduloCónico.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
 </head>
-<body>
+<body onload="dibujo()">
 <header>
     <h1>Péndulo Cónico</h1>
     <h2>Física I</h2>
@@ -73,46 +74,60 @@
     </article>
 
     <h2 id="ejercicioExp"><div class="enblanco"></div>Ejercicio Explicativo</h2>
-    <article>
+    <article class="calculos">
         <div>
-            <p> Desarrollo del Ejercicio:
+            <p> Desarrollo del Ejercicio:</p>
+            <div>
+
+                <span>Tension</span><input type="number" id="tens"><br>
+                <span>Masa</span><input type="number" id="masa"><br>
+                <span>Angulo</span><input type="number" id="angulo"><br>
+                <span>Radio</span><input type="number" id="radio"><br>
+                <span>Longitud</span><input type="number" id="longitud"><br>
+            </div>
             <div class="divVarC">
-                Variable que desea Calcular
-                <form name="varC" onclick="shownVariables()">
-                    <input name="varCal" value="tension" type="radio"> Tension(N) <br>
-                    <input name="varCal" value="Longitud" type="radio" checked> Longitud(m) <br>
-                    <input name="varCal" value="gravedad" type="radio"> Masa(kg) <br>
-                </form>
+                <h4>Variable que desea Calcular</h4>
+                <select id="varC">
+                    <option value="1" > Tension (N) </option>
+                    <option value="2" > Longitud (m) </option>
+                    <option value="3" > Masa (kg) </option>
+                    <option value="4" > Angulo (°)</option>
+                    <option value="5" > Velocidad (km/h) </option>
+                    <option value="6" > Radio (m) </option>
+                </select>
             </div>
-            <div class="divVarC" id="valIngresar">
-                Valores a Ingresar
-                <form name="valoresIngr">
-                    Longitud=<input type="text" name="longitud" size="4" onchange="calcPendulo(this.name, this.value)">
-                    <select name="unidL">
-                        <option value="metros">metros</option>
-                        <option value="pulgadas">pulgadas</option>
-                        <option value="pies">pies</option>
-                    </select>
-                    <br>
-                    Gravedad=<input type="text" name="Grav" value="9.8" size="4">
-                    <br>
-                    Angulo=<input type="text" name="angulo" size="4" onchange="calcPendulo(this.name, this.value)">
-                    <select name="unidAng">
-                        <option value="grados">grados</option>
-                        <option value="radianes">radianes</option>
-                    </select>
-                </form>
+            <div>
+                <button id="calcular" onclick="Calcular()">Calcular</button>
             </div>
-            <div class="divVarC" id="resultados">
-                <form name="resul">
-                    T(N)=<input type="text" id="resul_tension">
-                </form>
-            </div>
-            </p>
+            <div><input type="text" disabled id="res"></div>
         </div>
     </article>
+    <canvas id="canvas" width="550" height="250">
+
+    </canvas>
     <br/><br/>
+
+    <article>
+        <h2>Ejercicio de ejemplo </h2>
+        <h3>Demostra que entendiste resolviendo el siguiente ejercicio.</h3>
+        <h3>Enunciado:</h3>
+        <p>Una masa de 4200 gr se encuentra a unidad a un hilo de 150 cm de longitud que cuelga del techo de una
+            habitación. Si el cuerpo describe un movimiento circular uniforme de 50 cm de radio, determinar:
+            a) la que velocidad a la que se mueve.
+            b) el valor de la tensión de la cuerda.</p>
+        <h3>Datos:</h3>
+        <ul>
+            <li>m = 4200 gr = 4.2 kg</li>
+            <li>L = 150 cm = 1.5 m</li>
+            <li>R = 50 cm = 0.5 m</li>
+            <li>g = 9.8  m/s2</li>
+            <li>θ = 19.47º</li>
+            <li>v = ?</li>
+            <li>T = ?</li>
+        </ul>
+    </article>
 </section>
+
 <aside>
     <div   class="mati"  id="anuncio1">
         <h2>Movimiento</h2>

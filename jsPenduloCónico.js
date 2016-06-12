@@ -2,32 +2,40 @@
  * Created by Mark & Nik on 10/05/16.
  */
 
-function shownVariables() {
-    if(document.varC.varCal.value=="tension"){
-        document.getElementById('valIngresar').style.display = 'block';
-    }
-    else{
-        document.getElementById('valIngresar').style.display = 'none';
-    }
-}
+function Calcular()
+{
+    var resultado=0;
+    var unidad;
+    var opcion = document.getElementById("varC").value;
+    switch (opcion){
+        case "1":
+             resultado = (document.getElementById("masa").value * 9.8)/(Math.cos(document.getElementById("angulo").value*Math.PI/180));
+            unidad = " (N)";
+            break;
+        case "2":
+            resultado = document.getElementById("radio").value / Math.sin(document.getElementById("angulo").value*Math.PI/180);
+            unidad = " (m)";
+            break;
+        case "3":
+            resultado = (document.getElementById("tens").value * Math.cos(document.getElementById("angulo").value*Math.PI/180)) / 9.8;
+            unidad = " (km)";
+            break;
+        case "4":
+            resultado = Math.acos(document.getElementById("radio").value / document.getElementById("longitud").value);
 
-function calcPendulo(nombre,valor){
-    if(isNaN(valor)){
-        alert("El valor "+nombre+" debe ser numerico");
-        document.getElementsByName(nombre).value="";
-        document.getElementById('resultados').style.display = 'none';
-    }
-    else if(document.valoresIngr.longitud!="" && document.valoresIngr.angulo!=""){
-        document.getElementById('resultados').style.display = 'block';
-        varLong=document.valoresIngr.longitud.value;
-        varAng=document.valoresIngr.angulo.value;
-
-        Total=2*Math.PI*Math.sqrt(Number(varLong)*Math.cos(Number(varAng)*Math.PI/180)/9.8);
-        Total=Math.round(Total*100)/100;
-        document.getElementById("resul_tension").value=Total;
-    }
-    else{
-        document.getElementById('resultados').style.display = 'none';
+            resultado = resultado * 180 / Math.PI;
+            unidad = "°";
+            break;
+        case "5":
+            resultado = Math.sqrt(9.8 * document.getElementById("radio").value * Math.tan(document.getElementById("angulo").value*Math.PI/180));
+            unidad = " (km/h)";
+            break;
+        case "6":
+            resultado = document.getElementById("longitud").value * Math.sin(document.getElementById("angulo").value*Math.PI/180);
+            unidad = " (m)";
+            break;
     }
 
+    var resultadoFinal = resultado.toFixed(2);
+    document.getElementById("res").value = resultadoFinal + unidad;
 }
