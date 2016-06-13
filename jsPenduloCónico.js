@@ -7,10 +7,10 @@ function Calcular()
     var resultado=0;
     var unidad;
     var opcion = document.getElementById("varC").value;
-    
+
     switch (opcion){
         case "1"://calculo de la Tension
-             resultado = (document.getElementById("masa").value * 9.8)/(Math.cos(document.getElementById("angulo").value*Math.PI/180));
+            resultado = (document.getElementById("masa").value * 9.8)/(Math.cos(document.getElementById("angulo").value*Math.PI/180));
             unidad = " (N)";
             break;
 
