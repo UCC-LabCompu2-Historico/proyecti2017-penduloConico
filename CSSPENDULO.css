@@ -181,10 +181,14 @@ footer a {
     float:left;
 }
 
-#canvas
-{
+#canvas {
     border: 2px solid #194D80;
     background-color: #fff;
+}
+
+#grav
+{
+    font-size: medium;
 }
 
 img{
@@ -238,4 +242,20 @@ img{
     height: 20px;
     padding:3px;
     background-color: #fff;
+}
+
+.ejemplo
+{
+    clear: both;
+}
+
+.ejemplo ul li button
+{
+    background-color: #ffffff;
+    padding: 4px;
+    color: #194D80;
+    border-color: #ffffff;
+    margin-bottom:2px;
+    margin-top:2px;
+    font-size: medium;
 }
