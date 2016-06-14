@@ -25,7 +25,7 @@ function Calcular()
             break;
 
         case "4"://calculo del Angulo
-            resultado = Math.acos(document.getElementById("radio").value / document.getElementById("longitud").value);
+            resultado = Math.asin(document.getElementById("radio").value / document.getElementById("longitud").value);
 
             resultado = resultado * 180 / Math.PI; //No convierte correctamente el angulo en Grados
             unidad = "°";
