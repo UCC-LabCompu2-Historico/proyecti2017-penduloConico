@@ -9,7 +9,7 @@ function dibujo() {
     var centerX = myCanvas.width / 2;
     var centerY = myCanvas.height * 2/3;
     var radius = 20;
-    var angIngresado= 19.47; //Se supone que este es el valor que ingreso el usuario y esta en grados
+    var angIngresado= angulo; //Se supone que este es el valor que ingreso el usuario y esta en grados
 
     ctx.beginPath();
     //Dibuja circulo
@@ -43,4 +43,10 @@ function dibujo() {
     ctx.lineTo(centerX+lineaHor,lineaVer); //Linea a la derecha
     ctx.stroke();
     ctx.closePath();
+}
+
+function borrarCanvas() {
+    var myCanvas = document.getElementById("canvas");
+    var ctx = myCanvas.getContext("2d");
+    ctx.clearRect(0,0,550,250);
 }

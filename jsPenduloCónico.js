@@ -1,7 +1,7 @@
 /**
  * Created by Mark & Nik on 10/05/16.
  */
-
+var angulo;
 function Calcular()
 {
     var resultado=0;
@@ -12,16 +12,19 @@ function Calcular()
         case "1"://calculo de la Tension
             resultado = (document.getElementById("masa").value * 9.8)/(Math.cos(document.getElementById("angulo").value*Math.PI/180));
             unidad = " (N)";
+            angulo = document.getElementById("angulo").value;
             break;
 
         case "2"://calculo de la Longitud
             resultado = document.getElementById("radio").value / Math.sin(document.getElementById("angulo").value*Math.PI/180);
             unidad = " (m)";
+            angulo = document.getElementById("angulo").value;
             break;
 
         case "3"://calculo de Masa
             resultado = (document.getElementById("tens").value * Math.cos(document.getElementById("angulo").value*Math.PI/180)) / 9.8;
             unidad = " (kg)";
+            angulo = document.getElementById("angulo").value;
             break;
 
         case "4"://calculo del Angulo
@@ -29,19 +32,24 @@ function Calcular()
 
             resultado = resultado * 180 / Math.PI; //No convierte correctamente el angulo en Grados
             unidad = "°";
+            angulo = resultado;
             break;
 
         case "5"://calculo de la Velocidad
             resultado = Math.sqrt(9.8 * document.getElementById("radio").value * Math.tan(document.getElementById("angulo").value*Math.PI/180));
             unidad = " (km/h)";
+            angulo = document.getElementById("angulo").value;
             break;
 
         case "6"://calculo del Radio
             resultado = document.getElementById("longitud").value * Math.sin(document.getElementById("angulo").value*Math.PI/180);
             unidad = " (m)";
+            angulo = document.getElementById("angulo").value;
             break;
     }
 
     var resultadoFinal = resultado.toFixed(2);
     document.getElementById("res").value = resultadoFinal + unidad;
+    borrarCanvas();
+    dibujo();
 }
