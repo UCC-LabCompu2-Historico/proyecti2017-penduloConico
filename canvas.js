@@ -17,12 +17,14 @@ function dibujo() {
     //Dibuja Linea
     ctx.moveTo(centerX,0);
     ctx.lineTo(centerX,centerY-radius);
+    ctx.fillStyle = 'black';
+    ctx.fill();
     ctx.stroke();
     ctx.closePath();
 
     //Si van a cambiar de color, comienzan un Path nuevo
     ctx.beginPath();
-    ctx.strokeStyle="purple";
+    ctx.strokeStyle="#194D80";
     ctx.moveTo(centerX,0);
     var lineaVer = (centerY-radius) * Math.cos(angIngresado * Math.PI /180 );
     var lineaHor = (centerY-radius) * Math.sin(angIngresado * Math.PI /180 );
@@ -31,18 +33,22 @@ function dibujo() {
     var radioY= radius * Math.cos(angIngresado * Math.PI /180 );
     var radioX= radius * Math.sin(angIngresado * Math.PI /180 );
     ctx.arc(centerX-lineaHor-radioX,lineaVer+radioY,radius,-radius,2*Math.PI);
+    ctx.fillStyle = '#194D80';
+    ctx.fill();
     ctx.stroke();
     ctx.closePath();
 
     //Si van a cambiar de color, comienzan un Path nuevo
     ctx.beginPath();
-    ctx.strokeStyle="green";
+    ctx.strokeStyle="#7C858B";
     ctx.moveTo(centerX,0);
     var lineaVer = (centerY-radius) * Math.cos(angIngresado * Math.PI /180 );
     var lineaHor = (centerY-radius) * Math.sin(angIngresado * Math.PI /180 );
     ctx.lineTo(centerX+lineaHor,lineaVer);//Linea a la derecha
 
     ctx.arc(centerX+lineaHor+radioX,lineaVer+radioY,radius,radius,(Math.PI/180)*360,true);
+    ctx.fillStyle = '#7C858B';
+    ctx.fill();
     ctx.stroke();
     ctx.closePath();
 }
