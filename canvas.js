@@ -40,7 +40,9 @@ function dibujo() {
     ctx.moveTo(centerX,0);
     var lineaVer = (centerY-radius) * Math.cos(angIngresado * Math.PI /180 );
     var lineaHor = (centerY-radius) * Math.sin(angIngresado * Math.PI /180 );
-    ctx.lineTo(centerX+lineaHor,lineaVer); //Linea a la derecha
+    ctx.lineTo(centerX+lineaHor,lineaVer);//Linea a la derecha
+
+    ctx.arc(centerX+lineaHor+radioX,lineaVer+radioY,radius,radius,(Math.PI/180)*360,true);
     ctx.stroke();
     ctx.closePath();
 }
