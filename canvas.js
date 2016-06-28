@@ -57,7 +57,7 @@ function dibujo() {
     var myCanvas = document.getElementById("canvas");
     var ctx = myCanvas.getContext("2d");
     var centerX = myCanvas.width / 2;
-    var centerY = cLongitud * 100;
+    var centerY = cLongitud * 60;
     var radius = cMasa*4;
     var angIngresado= cAngulo; //Se supone que este es el valor que ingreso el usuario y esta en grados
 
