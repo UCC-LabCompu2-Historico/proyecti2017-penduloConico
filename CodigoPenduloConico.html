@@ -8,7 +8,7 @@
     <script type="text/javascript" src="jsPenduloCónico.js"></script>
     <script type="text/javascript" src="canvas.js"></script>
 </head>
-<body>
+<body onload="dibujoInicio()">
 <header>
     <h1>Péndulo Cónico</h1>
     <h2>Física I</h2>
@@ -79,35 +79,60 @@
             <p> Desarrollo del Ejercicio:</p><br>
             <div class="inputs-calculo">
 
+                <div class="divVarC">
+                    <h4>Variable que desea Calcular</h4>
+                    <select id="varC" onchange="desactivar()">
+                        <option value="0" > Variable </option>
+                        <option value="1" > Tension (N) </option>
+                        <option value="2" > Longitud (m) </option>
+                        <option value="3" > Masa (kg) </option>
+                        <option value="4" > Angulo (°)</option>
+                        <option value="5" > Velocidad (km/h) </option>
+                        <option value="6" > Radio (m) </option>
+                    </select>
+                </div>
+
                 <div class="span">
-                    <span class="margin-top">Tension</span><br>
-                    <span class="margin-top">Masa</span><br>
-                    <span class="margin-top">Angulo</span><br>
-                    <span class="margin-top">Radio</span><br>
-                    <span class="margin-top">Longitud</span><br>
+                    <span style="position: relative; top:-10px;">Tension</span><br>
+                    <span style="position: relative; top:-3px;">Masa</span><br>
+                    <span style="position: relative; top:3px;">Angulo</span><br>
+                    <span style="position: relative; top:10px;">Radio</span><br>
+                    <span style="position: relative; top:15px;">Longitud</span><br>
 
                 </div>
                 <div>
-                <input type="number" id="tens"><br>
-                <input type="number" id="masa"><br>
-                <input type="number" id="angulo"><br>
-                <input type="number" id="radio"><br>
-                <input type="number" id="longitud"><br>
+                <input type="number" id="tens" >
+                    <select id="select-tens">
+                        <option value="1">N</option>
+                    </select><br>
+                <input type="number" id="masa">
+                    <select id="select-masa">
+                        <option value="1">kg</option>
+                        <option value="2">g </option>
+                </select><br>
+                <input type="number" id="angulo">
+                    <select id="select-angulo">
+                        <option value="1">°</option>
+                        <option value="2">rad</option>
+                    </select><br>
+                <input type="number" id="radio">
+                    <select id="select-radio">
+                        <option value="1">m</option>
+                        <option value="2">cm</option>
+                        <option value="3">km</option>
+                    </select><br>
+                <input type="number" id="longitud">
+                    <select id="select-longitud">
+                        <option value="1">m</option>
+                        <option value="2">cm</option>
+                        <option value="3">km</option>
+                    </select><br>
                 </div>
             </div>
-            <p id="grav">Gravedad  = 9.8  m/s2</p>
-            <div class="divVarC">
-                <h4>Variable que desea Calcular</h4>
-                <select id="varC">
-                    <option value="1" > Tension (N) </option>
-                    <option value="2" > Longitud (m) </option>
-                    <option value="3" > Masa (kg) </option>
-                    <option value="4" > Angulo (°)</option>
-                    <option value="5" > Velocidad (km/h) </option>
-                    <option value="6" > Radio (m) </option>
-                </select>
-            </div>
-            <div>
+            <br><br>
+            <p id="grav">Gravedad  = 9.8  m/s2</p><br>
+
+           <div>
                 <button id="calcular" onclick="Calcular()">Calcular</button>
             </div>
             <div><input type="text" disabled id="res"></div>

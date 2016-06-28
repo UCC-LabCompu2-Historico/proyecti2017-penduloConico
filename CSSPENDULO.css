@@ -235,6 +235,7 @@ img{
 {
     float: left;
     margin-right: 7px;
+    margin-top: 10px;
 }
 
 #res
@@ -258,4 +259,94 @@ img{
     margin-bottom:2px;
     margin-top:2px;
     font-size: medium;
+}
+#tens{
+    float: left;
+    width: 125px;
+    margin-bottom: 5px;
+    border: 2px solid #7C858B;
+
+}
+#select-tens
+{
+    float: left;
+    width: 42px;
+    background-color: #194D80;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 5px;
+
+}
+
+#masa{
+    float: left;
+    width: 125px;
+    margin-bottom: 5px;
+    border: 2px solid #7C858B;
+}
+#select-masa
+{
+    float: left;
+    width: 42px;
+    background-color: #194D80;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 5px;
+
+
+}
+#angulo{
+     float: left;
+     width: 125px;
+    margin-bottom: 5px;
+    border: 2px solid #7C858B;
+ }
+#select-angulo
+{
+    float: left;
+    background-color: #194D80;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 5px;
+
+}
+#radio{
+     float: left;
+     width: 125px;
+    margin-bottom: 5px;
+    border: 2px solid #7C858B;
+ }
+#select-radio
+{
+    float: left;
+    background-color: #194D80;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 5px;
+
+}
+#longitud{
+     float: left;
+     width: 125px;
+    margin-bottom: 5px;
+    border: 2px solid #7C858B;
+ }
+#select-longitud
+{
+    float: left;
+    background-color: #194D80;
+    color: #fff;
+    border-color: #194D80;
+    margin-bottom: 5px;
+
+}
+.margin-top
+{
+    position: relative;
+    top:5px;
+}
+
+.red{
+    border: 2px solid #ac2925 !important;
+    background-color: rgba(211, 0, 0, 0.5);
 }
