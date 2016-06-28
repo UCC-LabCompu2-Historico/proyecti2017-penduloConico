@@ -7,7 +7,7 @@ var cAngulo;
 var cMasa;
 var cRadio;
 
-function Validar()
+function Validar()//esta funcion es para que no se ingresen numeros negativos
 {
 
     if(document.getElementById("tens").value < 0){
@@ -63,7 +63,7 @@ function Validar()
 function Calcular()
 {
 
-    Validar();
+    Validar();//llamamos a la funcion para verificar qu eno sea negativo
     
     var resultado=0;
     var unidad;
@@ -161,6 +161,7 @@ function Calcular()
     dibujo();
 }
 
+// Esta funcion es para desactivar el campo elegido a calcular
 function desactivar() {
     var opcion = document.getElementById("varC").value;
     var t = document.getElementById("tens");

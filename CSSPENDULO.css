@@ -350,3 +350,7 @@ img{
     border: 2px solid #ac2925 !important;
     background-color: rgba(211, 0, 0, 0.5);
 }
+
+.left{
+    float: left;
+}
