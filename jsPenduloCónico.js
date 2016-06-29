@@ -63,7 +63,7 @@ function Validar()//esta funcion es para que no se ingresen numeros negativos
 function Calcular()
 {
 
-    Validar();//llamamos a la funcion para verificar qu eno sea negativo
+    Validar();//llamamos a la funcion para verificar que no sea negativo
     
     var resultado=0;
     var unidad;
