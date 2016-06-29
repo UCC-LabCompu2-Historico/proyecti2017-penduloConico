@@ -53,7 +53,7 @@ function Validar()//esta funcion es para que no se ingresen numeros negativos
     if(document.getElementById("longitud").value < 0){
         var l = document.getElementById("longitud");
         l.setAttribute("class", "red");
-        
+        alert("NO SE PUEDEN INGRESAR VALORES NEGATIVOS ");
     }else{
         var l = document.getElementById("longitud");
         l.removeAttribute("class");

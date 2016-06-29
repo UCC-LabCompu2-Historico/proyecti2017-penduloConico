@@ -54,14 +54,16 @@ function dibujoInicio() {
 }
 
 function dibujo() {
-
     var myCanvas = document.getElementById("canvas");
     var ctx = myCanvas.getContext("2d");
     var centerX = myCanvas.width / 2;
     var centerY = cLongitud * 70;
     var radius = cMasa*4;
-    var angIngresado= cAngulo; //Se supone que este es el valor que ingreso el usuario y esta en grados
+    var angIngresado=0; //Se supone que este es el valor que ingreso el usuario y esta en grados
 
+function animar (){
+
+    myCanvas.width= myCanvas.width;
     ctx.beginPath();
     //Dibuja circulo
     ctx.arc(centerX,centerY,radius,0,2*Math.PI); //context.arc(x,y,r,sAngle,eAngle,counterclockwise);
@@ -104,6 +106,15 @@ function dibujo() {
     ctx.lineTo(centerX+lineaHor,lineaVer);//Linea a la derecha
     ctx.stroke();
     ctx.closePath();
+
+    angIngresado += 0.5;
+
+    if(angIngresado >= cAngulo){
+        clearInterval(id);
+    }
+
+}
+   var id = setInterval(animar, 10);
 }
 
 
